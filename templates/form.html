@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <body>
-    <h1>Enter numbers</h1>
+    <h1>Ventilator prediction</h1>
     <form action="." method="POST">
-        <input type="text" name="num1">
-        <input type="text" name="num2">
-        <input type="submit" value="Check !">
+        Number in hospital not on ventilators: <input type="text" name="num1" /> <br />
+        Anticipated number of admissions tomorrow: <input type="text" name="num2" /> <br/>
+        <input name="predict" type="submit" value="Submit" />
+    </form>
+    <br />
+    <h1>Ventilator simulation</h1>
+    <form action="." method="POST">
+        Enter lambda_t:<br /> <textarea name="lambda"></textarea>
+        <input name="sim" type="submit" value="Submit" />
     </form>
 </body>
 </html>
